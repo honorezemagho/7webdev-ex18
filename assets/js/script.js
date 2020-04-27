@@ -6,10 +6,12 @@
  };
 
  // Exercise 2
- function greatestCommonDivisor(number1, number2) {
-     if (number1 == 0)
-         return number1;
-     return gcd(number2, number1 % number2);
+ function gcd(number1, number2) {
+    if ( ! number2) {
+        return number1;
+    }
+
+    return gcd(number2, number1 % number2);
  }
 
 
